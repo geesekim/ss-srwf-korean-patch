@@ -1,77 +1,97 @@
 {
-  "format": "xdelta3 / VCDIFF version 0",
-  "artifact": "Korean localization1.0; same accepted v18 image and patch bytes",
-  "packaged_utc": "2026-10-11T09:31:41.362168+00:00",
+  "version": "1.0",
+  "change": "본명조 시나리오 제목 및 특수조작 공백 획 잘림 수정",
   "source": {
     "revision": "V2.002",
     "product_code": "T-20610G",
-    "date": "1997-12-11",
     "bytes": 578512032,
     "sha256": "c198a93007d46161abe769b6f579f01cae89e23737c0a2ff38ec314d43b3adf8"
   },
   "target": {
-    "candidate": "V2.002-hangul-name-v18",
     "image": "SRWF_KO_1.0.img",
     "cue": "SRWF_KO_1.0.cue",
     "bytes": 583681728,
     "sector_count": 248164,
-    "sha256": "e1c979fe0ec24fb6be997607d53f0c2e8cc4d4ba33d8cddc3ccce13bebab8a05",
+    "sha256": "2f3691a54ac7e87d30d0dd0c2374d997d36316bfd89147fa896e2c44c13d8a48",
     "cue_sha256": "dc9b7e036db5424ad61d48225511053973fc3901dcd0e730730b15970af11db9"
   },
   "patch": {
     "file": "SRWF_KO_1.0.xdelta",
-    "bytes": 2817701,
-    "sha256": "81a3f05bec038bced244f2946387c3ba8848fe7229266c7e6a32046626062eac",
-    "encoder": "xdelta3 3.2.0",
-    "options": [
-      "-e",
-      "-9",
-      "-S",
-      "none",
-      "-a",
-      "-G",
-      "-A",
-      "-D"
-    ]
+    "bytes": 2816000,
+    "sha256": "a2f8c797707db27e479985b841e6161c816b557d684d980238082d69dc5d2cfd",
+    "format": "xdelta3/VCDIFF"
   },
   "verification": {
     "status": "PASS",
-    "decode_exit_code": 0,
-    "whole_image_byte_comparison": "PASS",
+    "encode_decode_byte_comparison": "PASS",
     "compared_bytes": 583681728,
-    "decoded_sha256": "e1c979fe0ec24fb6be997607d53f0c2e8cc4d4ba33d8cddc3ccce13bebab8a05",
-    "source_and_candidate_preserved": true
-  },
-  "cue_track_geometry_exact_except_output_filename": true,
-  "canonical_selection": {
-    "user_accepted_v18_for_patch": true,
-    "candidate_bytes_unchanged": true,
-    "historical_static_manifest_retained": true
-  },
-  "static_qa": {
     "whole_disc_readback": "PASS",
-    "protected_files_exact": 33,
-    "glyphs_read_back": 11172,
-    "EDC_ECC": "PASS",
-    "name_regression_tests": 88,
-    "name_regression_status": "PASS"
+    "protected_sectors_exact": 248097,
+    "changed_sectors": 67,
+    "protected_archive_resources_exact": 105,
+    "decoded_bank_sizes_preserved": true,
+    "palettes_and_descriptor_attributes_preserved": true,
+    "all206_sprite_pixels_match_final_previews": true,
+    "changed_sector_EDC_ECC": "PASS",
+    "decoded_sha256": "2f3691a54ac7e87d30d0dd0c2374d997d36316bfd89147fa896e2c44c13d8a48",
+    "comparison_base_sha256": "e1c979fe0ec24fb6be997607d53f0c2e8cc4d4ba33d8cddc3ccce13bebab8a05",
+    "changed_files": [
+      "EFFECT.BIN",
+      "0"
+    ]
   },
-  "runtime_smoke": "PASS_SCOPED: exact v18 native editor deletion/cancel/confirm and normal save/fresh-process Continue; see runtime-summary.json",
+  "font": {
+    "family": "Source Han Serif K",
+    "style": "Regular",
+    "korean_name": "본명조",
+    "sha256": "8a7906d41ac75d7f1332e115cf2574f21e16432bc259544058b689cbb5ae040f"
+  },
+  "renderer_QA": {
+    "persisted_PNGs": 208,
+    "applied_title_sprites": 122,
+    "applied_header_sprites": 84,
+    "missing_glyphs": 0,
+    "digit_pair_collisions": 0,
+    "tested_digit_pairs": 100,
+    "translations_and_line_breaks_preserved": true,
+    "maximum_brightness_error_palette_index": 0.012885154061624604,
+    "width_adjustment": {
+      "id": 129,
+      "width": 240,
+      "horizontal_scale": 0.9794238683127572
+    },
+    "additional_title_previews_not_connected": [
+      128,
+      132
+    ]
+  },
+  "current_runtime_smoke": "USER_CONFIRMED_SCOPED",
+  "inherited_runtime": "Accepted previous1.0/v18 name entry/save/normal fresh-process Continue; see runtime-summary.json",
   "full_game_runtime": "NOT_RUN",
-  "remaining_scope": [
-    "Minor name-entry refinements accepted by the user remain.",
-    "All names, all six-character boundaries and all save slots have not been exhaustively tested in actual v18.",
-    "Battle-animation name consumers are not runtime-verified.",
-    "Full-game completion and every UI/scenario are not runtime-verified."
-  ],
-  "raw_game_images_included": false,
-  "user_ram_settings_savestates_included": false,
-  "version": "1.0",
-  "repackaging": {
-    "date": "2026-10-12",
-    "patch_payload_unchanged": true,
-    "fresh_patch_decode": "NOT_RUN; existing byte-identical accepted-patch proof retained",
-    "fresh_runtime": "NOT_RUN",
-    "cue_change": "output filename only"
-  }
+  "original_images_BIOS_saves_font_files_included": false,
+  "release_gate": "USER_CONFIRMED_FOR_RELEASE",
+  "reset_space_fix": {
+    "requested_wording_and_line_ends_preserved": true,
+    "space_advance_px": 4,
+    "raster_ink_losses_before": [
+      10,
+      11,
+      10,
+      12
+    ],
+    "raster_ink_losses_after": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "regression_tests": 22,
+    "non_target_file_bytes_preserved_from_confirmed_font_parent": true,
+    "changed_EXE_sector": 246797,
+    "protected_parent_sectors": 248163
+  },
+  "confirmation_scope": [
+    "User confirmed scenario-title font application.",
+    "User confirmed reset-screen glyph clipping fix."
+  ]
 }

@@ -1,6 +1,6 @@
 # 슈퍼로봇대전 F 세가 새턴 한국어화 1.0
 
-세가 새턴 일본판 **Super Robot Taisen F V2.002**(제품 번호 `T-20610G`)를 대상으로 한 한국어 패치입니다. [xdelta 패치](output/1.0/SRWF_KO_1.0.xdelta) · [적용 안내](output/1.0/적용안내.txt) · [동봉 파일](output/1.0)
+세가 새턴 일본판 **Super Robot Taisen F V2.002**(제품 번호 `T-20610G`)를 대상으로 한 한국어 패치입니다. [Release 다운로드](https://github.com/geesekim/ss-srwf-korean-patch/releases/tag/v1.0) · [xdelta 패치](output/1.0/SRWF_KO_1.0.xdelta) · [적용 안내](output/1.0/적용안내.txt) · [동봉 파일](output/1.0)
 
 ## 작업 범위
 
@@ -15,9 +15,9 @@
 
 - **Galmuri11**: 대사와 일반 메뉴 등 한글 본문.
 - **Galmuri9**: 타이틀 메뉴.
-- **AppleMyungjo**: 시나리오 제목 이미지.
+- **본명조 Regular(Source Han Serif K)**: 시나리오 제목 이미지.
 
-[Galmuri](https://github.com/quiple/galmuri)는 SIL Open Font License 1.1에 따라 사용하며 패치에 라이선스 문서를 동봉합니다. AppleMyungjo는 제목 이미지를 제작할 때 사용했고 폰트 파일은 배포하지 않습니다.
+[Galmuri](https://github.com/quiple/galmuri)는 SIL Open Font License 1.1에 따라 사용하며 패치에 라이선스 문서를 동봉합니다. 본명조도 SIL Open Font License 1.1에 따라 사용하며, 두 폰트의 라이선스 문서를 동봉합니다. 폰트 파일은 배포하지 않습니다.
 
 ## 원본과 달라진 부분
 
