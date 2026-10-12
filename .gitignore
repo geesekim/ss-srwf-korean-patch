@@ -1,0 +1,26 @@
+# 원본 디스크 이미지와 생성물은 저장소에 넣지 않는다.
+*.ccd
+*.img
+*.sub
+*.iso
+/original/
+/build/
+
+# 추출 원본, 생성 이미지, 외부 의존성과 배포 전 패키지
+/work/original/
+/work/patched/
+/work/deps/
+/work/patches/
+
+# 런타임 dump와 렌더링 결과는 재생성한다. 텍스트 manifest/TSV는 추적한다.
+/work/analysis/**/*.bin
+/work/analysis/**/*.png
+/work/analysis/**/*.bmp
+/work/analysis/**/*.raw
+/work/analysis/**/*.zip
+
+# 로컬 검수·운영 파일
+*.numbers
+.DS_Store
+__pycache__/
+*.py[cod]

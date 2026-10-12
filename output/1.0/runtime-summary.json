@@ -1,0 +1,62 @@
+{
+  "candidate": "V2.002-hangul-name-v18",
+  "candidate_sha256": "e1c979fe0ec24fb6be997607d53f0c2e8cc4d4ba33d8cddc3ccce13bebab8a05",
+  "user_acceptance": "2026-10-11: minor protagonist-name refinements remain; user accepted this build for patch creation",
+  "static_qa": {
+    "whole_disc_readback": "PASS",
+    "protected_files_exact": 33,
+    "glyphs_read_back": 11172,
+    "EDC_ECC": "PASS",
+    "name_regression_tests": 88,
+    "name_regression_status": "PASS"
+  },
+  "v18_actual_input": {
+    "provenance": "normal reset / new game, no savestate load",
+    "initial_first_name_delete": "PASS",
+    "empty_repeated_delete": "PASS",
+    "pending_consonant_visible": "PASS",
+    "Ga_then_backspace_to_consonant_then_empty": "PASS",
+    "surname_delete_without_erasing_alias": "PASS",
+    "alias_delete_to_all_empty": "PASS",
+    "cancel_restores_original_three_fields": "PASS",
+    "Ga_in_all_three_fields_and_confirm": "PASS"
+  },
+  "v18_normal_save_new_process_load": {
+    "provenance": "ordinary save / normal app exit / fresh emulator process / same candidate / first native Continue, no savestate load",
+    "normal_save": "PASS",
+    "normal_exit": "PASS",
+    "fresh_process_start": "PASS",
+    "normal_load": "PASS",
+    "names_and_progress_preserved": "PASS",
+    "first_name": "가",
+    "surname": "가",
+    "alias": "가",
+    "turn": 1,
+    "funds": 0,
+    "unit": "게슈펜스트",
+    "level": 1,
+    "HP": "3200/3200",
+    "EN": "120/120",
+    "save_checksum": "PASS",
+    "menu_response": "PASS"
+  },
+  "earlier_v13_actual_input": {
+    "scope": "earlier build evidence; not rerun exhaustively on v18",
+    "double_consonant_GG_to_ssanggiyeok": "PASS",
+    "compound_vowel_U_EO_to_WEO": "PASS",
+    "middle_space_insert_and_preserve_next_character": "PASS",
+    "left_right_and_space_delete": "PASS",
+    "normal_save_new_process_load": "PASS"
+  },
+  "remaining_scope": [
+    "Minor name-entry refinements accepted by the user remain.",
+    "All names, all six-character boundaries and all save slots have not been exhaustively tested in actual v18.",
+    "Battle-animation name consumers are not runtime-verified.",
+    "Full-game completion and every UI/scenario are not runtime-verified."
+  ],
+  "safety": {
+    "original_ram_and_user_progress_preserved": true,
+    "raw_game_images_and_user_saves_in_package": false,
+    "public_release": false
+  }
+}

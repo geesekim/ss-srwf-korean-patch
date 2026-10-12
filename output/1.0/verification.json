@@ -1,0 +1,77 @@
+{
+  "format": "xdelta3 / VCDIFF version 0",
+  "artifact": "Korean localization1.0; same accepted v18 image and patch bytes",
+  "packaged_utc": "2026-10-11T09:31:41.362168+00:00",
+  "source": {
+    "revision": "V2.002",
+    "product_code": "T-20610G",
+    "date": "1997-12-11",
+    "bytes": 578512032,
+    "sha256": "c198a93007d46161abe769b6f579f01cae89e23737c0a2ff38ec314d43b3adf8"
+  },
+  "target": {
+    "candidate": "V2.002-hangul-name-v18",
+    "image": "SRWF_KO_1.0.img",
+    "cue": "SRWF_KO_1.0.cue",
+    "bytes": 583681728,
+    "sector_count": 248164,
+    "sha256": "e1c979fe0ec24fb6be997607d53f0c2e8cc4d4ba33d8cddc3ccce13bebab8a05",
+    "cue_sha256": "dc9b7e036db5424ad61d48225511053973fc3901dcd0e730730b15970af11db9"
+  },
+  "patch": {
+    "file": "SRWF_KO_1.0.xdelta",
+    "bytes": 2817701,
+    "sha256": "81a3f05bec038bced244f2946387c3ba8848fe7229266c7e6a32046626062eac",
+    "encoder": "xdelta3 3.2.0",
+    "options": [
+      "-e",
+      "-9",
+      "-S",
+      "none",
+      "-a",
+      "-G",
+      "-A",
+      "-D"
+    ]
+  },
+  "verification": {
+    "status": "PASS",
+    "decode_exit_code": 0,
+    "whole_image_byte_comparison": "PASS",
+    "compared_bytes": 583681728,
+    "decoded_sha256": "e1c979fe0ec24fb6be997607d53f0c2e8cc4d4ba33d8cddc3ccce13bebab8a05",
+    "source_and_candidate_preserved": true
+  },
+  "cue_track_geometry_exact_except_output_filename": true,
+  "canonical_selection": {
+    "user_accepted_v18_for_patch": true,
+    "candidate_bytes_unchanged": true,
+    "historical_static_manifest_retained": true
+  },
+  "static_qa": {
+    "whole_disc_readback": "PASS",
+    "protected_files_exact": 33,
+    "glyphs_read_back": 11172,
+    "EDC_ECC": "PASS",
+    "name_regression_tests": 88,
+    "name_regression_status": "PASS"
+  },
+  "runtime_smoke": "PASS_SCOPED: exact v18 native editor deletion/cancel/confirm and normal save/fresh-process Continue; see runtime-summary.json",
+  "full_game_runtime": "NOT_RUN",
+  "remaining_scope": [
+    "Minor name-entry refinements accepted by the user remain.",
+    "All names, all six-character boundaries and all save slots have not been exhaustively tested in actual v18.",
+    "Battle-animation name consumers are not runtime-verified.",
+    "Full-game completion and every UI/scenario are not runtime-verified."
+  ],
+  "raw_game_images_included": false,
+  "user_ram_settings_savestates_included": false,
+  "version": "1.0",
+  "repackaging": {
+    "date": "2026-10-12",
+    "patch_payload_unchanged": true,
+    "fresh_patch_decode": "NOT_RUN; existing byte-identical accepted-patch proof retained",
+    "fresh_runtime": "NOT_RUN",
+    "cue_change": "output filename only"
+  }
+}
