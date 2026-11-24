@@ -1,5 +1,7 @@
 # 슈퍼로봇대전 F 세가 새턴 한국어화 v1.2
 
+[v1.2 다운로드](https://github.com/geesekim/ss-srwf-korean-patch/releases/tag/v1.2) · [적용 안내](output/1.2/적용안내.txt)
+
 ## 수정 사항
 
 - ‘아니오’로 전투를 진행한 뒤 전술맵 메뉴의 배경과 테두리가 사라지거나 메뉴 색상이 바뀌는 문제를 수정했습니다.
